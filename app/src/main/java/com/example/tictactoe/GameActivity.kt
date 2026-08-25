@@ -116,6 +116,20 @@ class GameActivity : AppCompatActivity(), View.OnClickListener {
             binding.btn6.text = filledPos[6]
             binding.btn7.text = filledPos[7]
             binding.btn8.text = filledPos[8]
+            val boardButtons = listOf(
+                binding.btn0, binding.btn1, binding.btn2,
+                binding.btn3, binding.btn4, binding.btn5,
+                binding.btn6, binding.btn7, binding.btn8
+            )
+            boardButtons.forEachIndexed { index, button ->
+                button.setTextColor(
+                    when (filledPos[index]) {
+                        "X" -> getColor(R.color.x_color)
+                        "O" -> getColor(R.color.o_color)
+                        else -> getColor(R.color.text_subtle)
+                    }
+                )
+            }
 
             binding.startGameBtn.visibility = View.VISIBLE
 

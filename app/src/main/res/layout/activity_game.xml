@@ -50,6 +50,7 @@
             android:tag="0"
             android:id="@+id/btn_0"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
         <Button android:layout_width="0dp"
@@ -60,6 +61,7 @@
             android:tag="1"
             android:id="@+id/btn_1"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
         <Button android:layout_width="0dp"
@@ -70,6 +72,7 @@
             android:tag="2"
             android:id="@+id/btn_2"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
         <Button android:layout_width="0dp"
@@ -80,6 +83,7 @@
             android:tag="3"
             android:id="@+id/btn_3"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
         <Button android:layout_width="0dp"
@@ -90,6 +94,7 @@
             android:tag="4"
             android:id="@+id/btn_4"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
         <Button android:layout_width="0dp"
@@ -100,6 +105,7 @@
             android:tag="5"
             android:id="@+id/btn_5"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
         <Button android:layout_width="0dp"
@@ -110,6 +116,7 @@
             android:tag="6"
             android:id="@+id/btn_6"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
         <Button android:layout_width="0dp"
@@ -120,6 +127,7 @@
             android:tag="7"
             android:id="@+id/btn_7"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
         <Button android:layout_width="0dp"
@@ -130,6 +138,7 @@
             android:tag="8"
             android:id="@+id/btn_8"
             android:background="@drawable/bg_cell"
+            android:backgroundTint="@null"
             android:textColor="@color/text_color"
             android:textStyle="bold"/>
     </GridLayout>
@@ -143,7 +152,8 @@
         android:textColor="@android:color/white"
         android:textSize="13sp"
         android:textStyle="bold"
-        android:background="@drawable/bg_button_primary"/>
+        android:background="@drawable/bg_button_primary"
+        android:backgroundTint="@null"/>
 
     <!-- New Chat part that i have added on 16th september for firebase realtime database -->
 
@@ -176,7 +186,8 @@
              android:padding="12dp"
              android:background="@drawable/bg_input"
              android:textColor="@color/text_color"
-             android:textColorHint="@color/text_subtle"/>
+             android:textColorHint="@color/text_subtle"
+             android:backgroundTint="@null"/>
 
         <Button
             android:id="@+id/sendButton"
@@ -186,7 +197,8 @@
              android:textColor="@android:color/white"
              android:textSize="12sp"
              android:textStyle="bold"
-             android:background="@drawable/bg_button_primary"/>
+             android:background="@drawable/bg_button_primary"
+             android:backgroundTint="@null"/>
     </LinearLayout>
 
 </LinearLayout>
