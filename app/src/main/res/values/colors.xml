@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="background_color">#090B10</color>
-    <color name="surface_color">#12161F</color>
-    <color name="surface_elevated">#1B2230</color>
-    <color name="primary_color">#8B5CF6</color>
-    <color name="primary_pressed">#7042D8</color>
-    <color name="accent_color">#B8F35A</color>
-    <color name="accent_warm">#FF9F68</color>
-    <color name="button_color">#8B5CF6</color>
-    <color name="edit_text_background">#171D29</color>
-    <color name="chat_input_background">#171D29</color>
-    <color name="status_text_color">#B8F35A</color>
-    <color name="text_color">#F8FAFC</color>
-    <color name="text_muted">#AAB4C5</color>
-    <color name="text_subtle">#718096</color>
-    <color name="line_color">#2B3547</color>
-    <color name="x_color">#FF9F68</color>
-    <color name="o_color">#6DD6FF</color>
+    <color name="background_color">#F5F5F7</color>
+    <color name="surface_color">#FFFFFF</color>
+    <color name="surface_elevated">#F2F2F7</color>
+    <color name="primary_color">#007AFF</color>
+    <color name="primary_pressed">#005FCC</color>
+    <color name="accent_color">#007AFF</color>
+    <color name="accent_warm">#FF9500</color>
+    <color name="button_color">#007AFF</color>
+    <color name="edit_text_background">#F2F2F7</color>
+    <color name="chat_input_background">#F2F2F7</color>
+    <color name="status_text_color">#007AFF</color>
+    <color name="text_color">#1D1D1F</color>
+    <color name="text_muted">#6E6E73</color>
+    <color name="text_subtle">#86868B</color>
+    <color name="line_color">#D2D2D7</color>
+    <color name="x_color">#FF9500</color>
+    <color name="o_color">#007AFF</color>
 </resources>
