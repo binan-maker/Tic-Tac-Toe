@@ -1,82 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".MainActivity"
-    android:background="@color/background_color">
+    android:background="@color/background_color"
+    android:fillViewport="true"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Tic Tac Toe"
-        android:textStyle="bold"
-        android:textSize="32sp"
-        android:layout_marginBottom="16dp"
-        android:padding="16dp"
-        android:textColor="@color/primary_color"/>
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/play_offline_btn"
-        android:text="Play Offline"
-        android:textColor="@android:color/white"
-        android:backgroundTint="@color/button_color"
-        android:layout_marginBottom="16dp"
-        android:padding="16dp"/>
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="36dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Or"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:layout_marginBottom="16dp"
-        android:textColor="@color/primary_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TIC TAC TOE"
+            android:textColor="@color/accent_color"
+            android:textSize="13sp"
+            android:letterSpacing="0.2"
+            android:textStyle="bold" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/create_online_btn"
-        android:text="Create Game Online"
-        android:textColor="@android:color/white"
-        android:backgroundTint="@color/button_color"
-        android:layout_marginBottom="16dp"
-        android:padding="16dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Ready, set, play."
+            android:textColor="@color/text_color"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Or"
-        android:textStyle="bold"
-        android:textSize="24sp"
-        android:layout_marginBottom="16dp"
-        android:textColor="@color/primary_color"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="28dp"
+            android:text="Classic strategy. Modern competition."
+            android:textColor="@color/text_muted"
+            android:textSize="16sp" />
 
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/get_id_input"
-        android:textSize="20sp"
-        android:padding="16dp"
-        android:hint="Enter game Id"
-        android:inputType="number"
-        android:backgroundTint="@color/edit_text_background"
-        android:textColor="@color/text_color"
-        android:layout_marginBottom="16dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_surface"
+            android:orientation="vertical"
+            android:padding="20dp">
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/join_online_btn"
-        android:text="Join game online"
-        android:textColor="@android:color/white"
-        android:backgroundTint="@color/button_color"
-        android:padding="16dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CHOOSE YOUR ARENA"
+                android:textColor="@color/text_muted"
+                android:textSize="12sp"
+                android:letterSpacing="0.12"
+                android:textStyle="bold" />
 
-</LinearLayout>
+            <Button
+                android:id="@+id/play_offline_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_button_primary"
+                android:text="PLAY OFFLINE"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/create_online_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_button_secondary"
+                android:text="CREATE ONLINE GAME"
+                android:textColor="@color/text_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="22dp"
+                android:gravity="center"
+                android:text="OR JOIN A FRIEND"
+                android:textColor="@color/text_subtle"
+                android:textSize="11sp"
+                android:letterSpacing="0.12"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/get_id_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_input"
+                android:hint="Enter 4-digit game ID"
+                android:inputType="number"
+                android:maxLength="4"
+                android:textColor="@color/text_color"
+                android:textColorHint="@color/text_subtle"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/join_online_btn"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/bg_button_secondary"
+                android:text="JOIN GAME"
+                android:textColor="@color/accent_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="22dp"
+            android:text="Two players • One winner"
+            android:textColor="@color/text_subtle"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

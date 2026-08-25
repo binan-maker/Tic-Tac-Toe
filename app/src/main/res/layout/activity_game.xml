@@ -1,113 +1,149 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background_color"
     android:orientation="vertical"
-    android:padding="14dp"
+    android:paddingStart="20dp"
+    android:paddingTop="24dp"
+    android:paddingEnd="20dp"
+    android:paddingBottom="16dp"
     tools:context=".GameActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        android:textStyle="bold"
-        android:textSize="35sp"
-        android:layout_marginBottom="16dp"
-        android:layout_gravity="center"
-        android:padding="8dp" />
+        android:text="GAME ROOM"
+        android:textColor="@color/text_muted"
+        android:textSize="12sp"
+        android:letterSpacing="0.18"
+        android:textStyle="bold" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/game_status_text"
         android:gravity="center"
-        android:textSize="40sp"
-        android:layout_marginBottom="16dp"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="18dp"
         android:textStyle="bold"
         android:text="Game not started"
-        android:textColor="#FF5722"/>
+        android:textColor="@color/status_text_color"
+        android:background="@drawable/bg_status"
+        android:padding="15dp"
+        android:maxLines="2" />
 
     <GridLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="@drawable/bg_surface"
         android:columnCount="3">
 
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="0"
             android:id="@+id/btn_0"
-            android:backgroundTint="#483f73"/>
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="1"
             android:id="@+id/btn_1"
-            android:backgroundTint="#483f73"/>
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="2"
             android:id="@+id/btn_2"
-            android:backgroundTint="#483f73"/>
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="3"
             android:id="@+id/btn_3"
-            android:backgroundTint="#483f73"/>
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="4"
             android:id="@+id/btn_4"
-            android:backgroundTint="#483f73"/>
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="5"
             android:id="@+id/btn_5"
-            android:backgroundTint="#483f73"/>
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="6"
             android:id="@+id/btn_6"
-            android:backgroundTint="#483f73"/>
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="7"
             android:id="@+id/btn_7"
-            android:backgroundTint="#483f73"/>
-        <Button android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="8dp"
-            android:textSize="60sp"
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
+        <Button android:layout_width="0dp"
+            android:layout_height="88dp"
+            android:layout_columnWeight="1"
+            android:layout_margin="5dp"
+            android:textSize="42sp"
             android:tag="8"
             android:id="@+id/btn_8"
-            android:backgroundTint="#483f73"/>
+            android:background="@drawable/bg_cell"
+            android:textColor="@color/text_color"
+            android:textStyle="bold"/>
     </GridLayout>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="20dp"
-        android:text="Start game"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="14dp"
         android:id="@+id/start_game_btn"
-        android:backgroundTint="#483f73"/>
+        android:text="START MATCH"
+        android:textColor="@android:color/white"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:background="@drawable/bg_button_primary"/>
 
     <!-- New Chat part that i have added on 16th september for firebase realtime database -->
 
@@ -116,15 +152,18 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
+        android:background="@drawable/bg_surface"
         android:scrollbars="vertical"
-        android:layout_marginTop="16dp"
-        android:padding="8dp" />
+        android:layout_marginTop="14dp"
+        android:padding="10dp"
+        android:clipToPadding="false" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:padding="8dp">
+         android:layout_marginTop="10dp"
+         android:gravity="center_vertical">
 
         <EditText
             android:id="@+id/messageInput"
@@ -132,17 +171,22 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:hint="Type a message"
-            android:layout_marginEnd="8dp"
+             android:layout_marginEnd="8dp"
             android:inputType="text"
-            android:padding="12dp"
-            android:backgroundTint="#483f73"/>
+             android:padding="12dp"
+             android:background="@drawable/bg_input"
+             android:textColor="@color/text_color"
+             android:textColorHint="@color/text_subtle"/>
 
         <Button
             android:id="@+id/sendButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Send"
-            android:backgroundTint="#483f73"/>
+             android:text="SEND"
+             android:textColor="@android:color/white"
+             android:textSize="12sp"
+             android:textStyle="bold"
+             android:background="@drawable/bg_button_primary"/>
     </LinearLayout>
 
 </LinearLayout>
